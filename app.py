@@ -45,7 +45,7 @@ qa=RetrievalQA.from_chain_type(
     chain_type="stuff", 
     retriever=docsearch.as_retriever(search_kwargs={'k': 2}),
     return_source_documents=True, 
-    chain_type_kwargs=chain_type_kwargs)
+    chain_type_kwargs=chain_type_kwargs, verbose=True)
 
 
 
